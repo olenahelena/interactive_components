@@ -1,0 +1,203 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --dark-orange: hsl(25, 100%, 44%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --dark-blue-grey: hsl(215, 18%, 27%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+  font-size: 15px;
+  line-height: 19px;
+  color: var(--light-grey);
+  font-weight: 400;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--very-dark-blue);
+}
+
+.container,
+.container_greeting {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+  padding: 23px 22px 32px;
+  min-width: 325px;
+}
+@media (min-width: 600px) {
+  .container,
+  .container_greeting {
+    max-width: 411px;
+    min-height: 354px;
+  }
+}
+.container .star_icon,
+.container_greeting .star_icon {
+  display: inline-block;
+  background-color: var(--dark-blue-grey);
+  text-align: center;
+  width: 37px;
+  height: 37px;
+  padding: 10px;
+  border-radius: 30px;
+  margin-bottom: 22px;
+}
+@media (min-width: 600px) {
+  .container .star_icon,
+  .container_greeting .star_icon {
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+  }
+}
+.container h1,
+.container_greeting h1 {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0 0 23px;
+}
+@media (min-width: 600px) {
+  .container h1,
+  .container_greeting h1 {
+    font-size: 28px;
+  }
+}
+.container p,
+.container_greeting p {
+  margin: 0 0 34px;
+  font-size: 14px;
+}
+@media (min-width: 600px) {
+  .container p,
+  .container_greeting p {
+    font-size: 15px;
+  }
+}
+.container ul,
+.container_greeting ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 0 23px;
+}
+.container ul .btn,
+.container_greeting ul .btn {
+  background-color: var(--dark-blue-grey);
+  border-radius: 30px;
+  cursor: pointer;
+  color: var(--medium-grey);
+  transition: all 0.5s ease;
+  width: 37px;
+  height: 37px;
+  text-align: center;
+  padding: 0;
+  border-style: none;
+}
+@media (min-width: 600px) {
+  .container ul .btn,
+  .container_greeting ul .btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+.container ul .btn:hover,
+.container_greeting ul .btn:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: 700;
+}
+.container ul .btn:active,
+.container ul .btn:focus,
+.container_greeting ul .btn:active,
+.container_greeting ul .btn:focus {
+  background-color: var(--medium-grey);
+  color: var(--white);
+  font-weight: 700;
+}
+.container .submit,
+.container .rate-again,
+.container_greeting .submit,
+.container_greeting .rate-again {
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  letter-spacing: 3px;
+  cursor: pointer;
+  background-color: var(--orange);
+  border-radius: 30px;
+  padding: 15px 0;
+  width: 100%;
+}
+.container .submit:hover,
+.container .submit:active,
+.container_greeting .submit:hover,
+.container_greeting .submit:active {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.container_greeting {
+  align-items: center;
+}
+.container_greeting .phone_image {
+  width: 150px;
+  margin: 0 0 24px;
+}
+.container_greeting .selected_rate {
+  color: var(--orange);
+  background-color: var(--dark-blue-grey);
+  font-weight: 400;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0 0 29px;
+}
+.container_greeting h2 {
+  color: var(--white);
+  margin: 0 0 24px;
+}
+.container_greeting .container_greeting_message {
+  text-align: center;
+  margin: 0 0 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
