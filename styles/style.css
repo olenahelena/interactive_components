@@ -14,14 +14,13 @@ html {
   --white: hsl(0, 0%, 100%);
   --light-grey: hsl(217, 12%, 63%);
   --medium-grey: hsl(216, 12%, 54%);
-  --dark-blue: hsl(213, 19%, 18%);
+  --dark-blue: hsl(215, 23%, 14%);
   --dark-blue-grey: hsl(215, 18%, 27%);
   --very-dark-blue: hsl(216, 12%, 8%);
 }
 
 body {
   font-size: 15px;
-  line-height: 19px;
   color: var(--light-grey);
   font-weight: 400;
   font-family: "Overpass", sans-serif;
@@ -46,7 +45,7 @@ body {
   .container,
   .container_greeting {
     max-width: 411px;
-    min-height: 354px;
+    min-height: 412px;
   }
 }
 .container .star_icon,
@@ -63,9 +62,10 @@ body {
 @media (min-width: 600px) {
   .container .star_icon,
   .container_greeting .star_icon {
-    width: 40px;
-    height: 40px;
-    padding: 12px;
+    width: 50px;
+    height: 50px;
+    padding: 17px;
+    margin-bottom: 35px;
   }
 }
 .container h1,
@@ -85,11 +85,13 @@ body {
 .container_greeting p {
   margin: 0 0 34px;
   font-size: 14px;
+  line-height: 1.2;
 }
 @media (min-width: 600px) {
   .container p,
   .container_greeting p {
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 1.4;
   }
 }
 .container ul,
@@ -101,6 +103,12 @@ body {
   justify-content: space-between;
   padding: 0;
   margin: 0 0 23px;
+}
+@media (min-width: 600px) {
+  .container ul,
+  .container_greeting ul {
+    margin: 0 0 30px;
+  }
 }
 .container ul .btn,
 .container_greeting ul .btn {
@@ -118,8 +126,8 @@ body {
 @media (min-width: 600px) {
   .container ul .btn,
   .container_greeting ul .btn {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
 }
 .container ul .btn:hover,
