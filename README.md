@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/olenahelena/interactive_components 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL:(https://profound-strudel-4ca7bf.netlify.app/)
 
 ### Built with
 
@@ -48,5 +48,5 @@ I have to work more on JavaScript functions.
 
 ## Author
 
-- Website - [Add your name here](https://github.com/olenahelena/interactive_components)
+- Website -(https://github.com/olenahelena/interactive_components)
 - Frontend Mentor - [@olenahelena](https://www.frontendmentor.io/profile/olenahelena)
